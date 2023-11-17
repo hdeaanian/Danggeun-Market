@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>당신 근처의 마켓 - 당근마켓</title>
+
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/plugin/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/jquery.easing.1.3.min.js"></script>
+    <script src="js/plugin/prefixfree.min.js"></script>
+    <script src="js/plugin/respond.min.js"></script>
+    <script src="js/plugin/jquery.overscroll.js"></script>
+    <script src="js/plugin/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin/jqfloat.min.js"></script>
+    <script src="js/plugin/logic.js"></script>
+
+    <!--[if It IE 9] <script src="js/respond.min.js"></script> <[endif]-->
+</head>
+
+<body>
+
+
+<div id="guide">
+    <div class="bg"><img src="images/guide_bg.png" alt="가이드"></div>
+    <div class="guide_box"><img src="images/guide.png" alt="가이드문구"></div>
+    <div class="close_btn"><img src="images/guide_btn.png" alt="닫기버튼"></div>
+</div>
+
+<div id="menu">
+    <nav id="navi">
+        <div class="menu menu01" data-name="sub01">
+            <img src="images/menu/menu_01.png" alt="동네생활">
+
+            <div class="g_sticker">
+                <div class="s01"><img src="images/menu/s_01.png" alt=""></div>
+                <div class="s02"><img src="images/menu/s_02.png" alt=""></div>
+                <div class="s03"><img src="images/menu/s_03.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="menu menu02" data-name="sub02"><img src="images/menu/menu_02.png" alt="중고거래">
+            <div class="g_sticker">
+                <div class="s04"><img src="images/menu/s_04.png" alt=""></div>
+                <div class="s05"><img src="images/menu/s_05.png" alt=""></div>
+                <div class="s06"><img src="images/menu/s_06.png" alt=""></div>
+            </div>
+        </div>
+        <div class="menu menu03" data-name="sub03"><img src="images/menu/menu_03.png" alt="동네생활">
+            <div class="g_sticker">
+                <div class="s07"><img src="images/menu/s_07.png" alt=""></div>
+                <div class="s08"><img src="images/menu/s_08.png" alt=""></div>
+                <div class="s09"><img src="images/menu/s_09.png" alt=""></div>
+            </div>
+        </div>
+    </nav>
+    <div class="category"><img src="images/menu/category.png" alt="카테고리명"></div>
+</div>
+
+<div class="toggle">
+<!--    <div class="menu-close"><img src="images/menu/close_btn_w.png" alt="닫기버튼"></div>-->
+    <div class="menu-open"><img src="images/menu_btn.png" alt="메뉴버튼"></div>
+</div>
+
+<!--<div id="quick_menu">-->
+<!--    <img src="" alt="">-->
+<!--</div>-->
+
+
+<div class="stage"></div>
+
+<article id="container" class="container">
+    <section id="main" class="main">
+
+        <div class="g_river">
+            <div class="river"><img src="images/01/river01.png" alt="강"></div>
+            <div class="g_fish">
+                <div class="t"><img src="images/01/river_fish_01.png" alt="상단물고기떼"></div>
+                <div class="m"><img src="images/01/river_fish_02.png" alt="중앙물고기떼"></div>
+                <div class="b"><img src="images/01/river_fish_03.png" alt="하단물고기떼"></div>
+            </div>
+            <div class="g_duck">
+                <div class="t"><img src="images/01/river_duck01.png" alt="물위오리"></div>
+                <div class="m"><img src="images/01/river_duck02.png" alt="물에뜬오리"></div>
+            </div>
+            <div class="monday"><img src="images/01/monday.png" alt="월요일에멘트"></div>
+
+        </div>
+        <div class="float_bg"></div>
+
+
+        <section id="section01">
+
+            <div class="dangcar"><img src="images/01/dangcar.png" alt="화물차"></div>
+            <div class="g_apt">
+                <div class="apt_bg"><img src="images/01/apt_bg.png" alt="비강조"></div>
+                <div class="apt"><img src="images/01/apt.png" alt="강조"></div>
+
+                <div class="light">
+                    <img src="images/light_101.png" alt="가로등">
+                    <div class="blink"></div>
+                </div>
+
+                <div class="g_people">
+                    <div class="mom"><img src="images/01/mom.png" alt="엄마"></div>
+                    <div class="g_kinder">
+                        <div class="kinder01"><img src="images/01/kinder01.gif" alt="안녕하는 어린이"></div>
+                        <div class="kinder02"><img src="images/01/kinder02.png" alt="어린이"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery"><img src="images/01/car.png" alt="용달차"></div>
+
+            <div class="g_park">
+                <div class="park_out"><img src="images/01/park_out.png" alt="테두리"></div>
+                <div class="find_cat"><img src="images/01/find_cat.png" alt="전단지"></div>
+                <div class="f_point">
+                    <div class="dot"></div>
+                    <div class="out_dot"></div>
+                </div>
+                <div class="park_other">
+                    <img src="images/01/park_other.png" alt="공원요소">
+                    <div class="human">
+                        <div class="man"><img src="images/01/park_man.png" alt="산책하는남자"></div>
+                        <div class="boy"><img src="images/01/park_boy.png" alt="철봉하는소년"></div>
+                    </div>
+                </div>
+                <div class="water"><img src="images/01/water.png" alt="분수"></div>
+                <div class="search"><img src="images/01/search.gif" alt="동네질문"></div>
+            </div>
+
+            <div class="g_life">
+                    <div class="life nextPage" data-name="sub01">
+                        <div class="on">
+                            <div><img src="images/01/town_bd_off.png" alt="비활성화"></div>
+                            <div class="float"><img src="images/01/town_bd_on.png" alt="활성화"></div>
+                        </div>
+                        <div class="craft"><img src="images/01/craft.gif" alt="공방모임"></div>
+                        <div class="read"><img src="images/01/meet.gif" alt="독서모임"></div>
+                        <div class="find"><img src="images/01/find.png" alt="친구찾기"></div>
+
+                        <div class="find02"></div>
+
+                    </div>
+                    <div class="tooltip"><img src="images/01/tooltip.png" alt="동네생활"></div>
+            </div>
+
+            <div class="g_soccer">
+                <div class="ball"><img src="images/01/ball.gif" alt="축구공"></div>
+                <div class="p01"><img src="images/01/10soccer.gif" alt="10번 선수"></div>
+                <div class="p02"><img src="images/01/7soccer.gif" alt="7번 선수"></div>
+                <div class="p03"><img src="images/01/soccer02.png" alt="1번 골키퍼"></div>
+                <div class="p04"><img src="images/01/soccer04.png" alt="18번 골키퍼"></div>
+                <div class="p05"><img src="images/01/21soccer.gif" alt="21번 선수"></div>
+            </div>
+
+            <div class="bicycle"><img src="images/01/bicycle.gif" alt="자전거"></div>
+            <div class="running"><img src="images/01/runing.gif" alt="달리는남자"></div>
+            <div class="floor_0"><img src="images/01/floor_1.png" alt="도로일부"></div>
+            <div class="meet"><img src="images/01/meet.png" alt="조기축구회"></div>
+            <div class="statue"><img src="images/01/danggeun.png" alt="동네지킴이"></div>
+
+
+        </section><!-- scene01 end -->
+
+
+        <section id="section02">
+            <div class="senior_item">
+                <div class="senior"><img src="images/01/park_senior.png" alt="어른부부"></div>
+                <div class="pin"><img src="images/01/pin.png" alt="당근핀"></div>
+                <div class="tag"><img src="images/tag_03.png" alt="거래물품"></div>
+            </div>
+            <div class="bus"><img src="images/04/bus.png" alt="당근페이버스"></div>
+            <div class="bike"><img src="images/02/bike.png" alt="오토바이"></div>
+            <div class="g_police">
+                <div class="police"><img src="images/02/police.png" alt="경찰차"></div>
+                <div class="text" style="display: none"><img src="images/02/text_trans.png" alt="말풍선"></div>
+            </div>
+            <div class="g_second">
+                <div class="second nextPage" data-name="sub02">
+                    <div class="twohand"><img src="images/02/full_off.png" alt="비활성화"></div>
+                    <div class="float"><img src="images/02/full_on.png" alt="활성화"></div>
+                </div>
+                <div class="man"><img src="images/02/man.gif" alt="구경하는남자"></div>
+            </div>
+
+            <div class="g_rail">
+                <div class="rail"><img src="images/02/rail_floor.png" alt="중고레일"></div>
+                <div class="g_item">
+                    <div class="item01"><img src="images/02/item01.png" alt="아이템1"></div>
+                    <div class="item02"><img src="images/02/item02.png" alt="아이템2"></div>
+                    <div class="item03"><img src="images/02/item03.png" alt="아이템3"></div>
+                    <div class="item04"><img src="images/02/item04.png" alt="아이템4"></div>
+                    <div class="item05"><img src="images/02/item05.png" alt="아이템5"></div>
+                    <div class="item06"><img src="images/02/item01.png" alt="아이템1"></div>
+                    <div class="item07"><img src="images/02/item02.png" alt="아이템2"></div>
+                    <div class="item08"><img src="images/02/item03.png" alt="아이템3"></div>
+
+                </div>
+                <div class="itembox"><img src="images/02/popular.png" alt="인기"></div>
+            </div>
+
+
+            <div class="g_chat">
+                <div class="chat"><img src="images/02/chat.png" alt="채팅하기"></div>
+                <div class="buy"><img src="images/02/buy.png" alt="삽니다"></div>
+            </div>
+            <div class="c_point">
+                <div class="dot"></div>
+                <div class="out_dot"></div>
+            </div>
+
+            <div class="flea"><img src="images/02/flea.gif" alt="구경하는여자"></div>
+            <div class="test"><img src="images/02/test.png" alt="씀씀이테스트"></div>
+            <div class="hoxy"><img src="images/02/hoxy.png" alt="혹시"></div>
+
+            <div class="tooltip"><img src="images/02/tooltip.png" alt="중고거래"></div>
+        </section><!-- scene02 end -->
+
+
+        <section id="section03">
+            <div class="job">
+                <img src="images/02/work.png" alt="알바구함">
+                <div class="tag"><img src="images/03/job_tag.png" alt="알바생구해요"></div>
+            </div>
+
+            <div class="car">
+                <div class="car_pin"><img src="images/03/pin.png" alt="당근핀"></div>
+                <div><img src="images/03/car.png" alt="자동차"></div>
+            </div>
+
+            <div class="g_store">
+
+                <div>
+                    <div class="store nextPage" data-name="sub03">
+                        <div><img src="images/03/full_off.png" alt="비활성화"></div>
+                        <div class="float"><img src="images/03/full_on.png" alt="활성화"></div>
+                    </div>
+                    <div class="balloon"><img src="images/03/balloon.gif" alt="풍선"></div>
+                    <div class="papa"><img src="images/03/papa.gif" alt="아빠와딸"></div>
+                </div>
+
+                <div class="shadow"></div>
+
+            </div>
+            <div class="dog"><img src="images/03/walking.gif" alt="산책하는여자"></div>
+            <div class="boy"><img src="images/03/boy.gif" alt="보드타는 소년"></div>
+            <div class="store_bg"><img src="images/03/store_bg.png" alt="당근농산"></div>
+            <div class="running"><img src="images/03/running.gif" alt="달리는여자"></div>
+
+            <div class="bakery">
+                <img src="images/03/bakery.png" alt="베이커리">
+                <div class="shopping"><img src="images/03/women_out.gif" alt="장바구니여자_수정전"></div>
+            </div>
+
+            <div class="bench"><img src="images/03/bench.png" alt="벤치"></div>
+
+            <div class="seller">
+                <div class="pin"><img src="images/03/pin.png" alt="당근핀"></div>
+                <div class="man"><img src="images/03/coffee.png" alt="카페남자"></div>
+            </div>
+
+            <div class="floor"><img src="images/03/floor_1.png" alt="도로일부"></div>
+            <div class="cat"><img src="images/03/cat.gif" alt="집나간고양이"></div>
+            <div class="t_point">
+                <div class="dot"></div>
+                <div class="out_dot"></div>
+            </div>
+
+            <div class="bike"><img src="images/03/bike.png" alt="오토바이"></div>
+            <div class="tooltip"><img src="images/03/tooltip.png" alt="동네가게"></div>
+
+        </section><!-- scene03 end -->
+
+
+        <section id="section04">
+
+            <div class="property"><img src="images/03/ad.png" alt="여기에광고하기"></div>
+            <div class="p_point">
+                <div class="dot"></div>
+                <div class="out_dot"></div>
+            </div>
+
+            <div class="g_laudry nextPage" data-name="sub03_1">
+                <div class="laudry"><img src="images/04/laundry.png" alt="세탁소"></div>
+            </div>
+
+            <div class="g_ad">
+                <div class="ad_center"><img src="images/04/ad_center.png" alt="광고주센터"></div>
+                <div class="light_on"><img src="images/04/light_on.gif" alt="불빛켜짐"></div>
+            </div>
+            <div class="biz_other"><img src="images/04/biz_other.png" alt="신호등"></div>
+            <div class="tooltip"><img src="images/04/tooltip.png" alt="비즈니스"></div>
+
+            <div class="g_biz">
+                <div class="biz">
+                    <div><img src="images/04/biz_off.png" alt="비활성화"></div>
+                    <div class="float"><img src="images/04/biz_on.png" alt="활성화"></div>
+                </div>
+                <div class="people">
+                    <div class="walking"><img src="images/04/walking.gif" alt="산책하는여자"></div>
+                    <div class="coffee"><img src="images/04/coffee.png" alt="앉아있는유치원남자"></div>
+                    <div class="dog"><img src="images/04/dog_01.png" alt="강아지2"></div>
+                </div>
+            </div>
+
+            <div class="kickboard"><img src="images/04/boy.png" alt="킥보드타는거래자"></div>
+            <div class="girl"><img src="images/04/girl.gif" alt="가방맨소녀"></div>
+            <div class="car"><img src="images/04/car.png" alt="자동차"></div>
+            <div class="delivery"><img src="images/04/delivery.png" alt="용달차"></div>
+
+            <div class="g_academy">
+                <div class="academy"><img src="images/04/academy.png" alt="학원"></div>
+                <div class="ad">
+                    <div class="video_box"><img src="images/04/ad_box_107.png" alt="영상광고판"></div>
+                    <div class="line"><img src="images/04/ad_line_107.png" alt="테두리"></div>
+                    <div class="video"><video src="images/danggeun.mp4" autoplay muted loop width="102" height="112"></video></div>
+                    <div class="outline"><img src="images/04/ad_out_109.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="bike"><img src="images/04/bicycle.gif" alt="자전거타는여자"></div>
+            <div class="tooltip"><img src="images/04/tooltip.png" alt="비즈니스"></div>
+
+        </section><!-- scene04 end -->
+
+        <section id="center">
+            <div><img src="images/img01.png" alt="당근마켓 앱"></div>
+            <div class="g_app">
+                <div class="app">
+                    <div class="app_light"><img src="images/center_light_111.png" alt="불빛"></div>
+                    <div class="off"><img src="images/img02.png" alt="당근마켓 앱"></div>
+                    <div class="on"><img src="images/img02.png" alt="앱움직임"></div>
+                </div>
+                <div>
+                    <div class="download">
+                        <img src="images/app.png" alt="앱다운로드로고">
+                        <div class="on"><img src="images/app.gif" alt="다운로드움직임"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="air"><img src="images/02/air.png" alt="비행기"></div>
+        </section>
+
+    </section><!--main end-->
+</article><!--container end-->
+
+
+
+<div class="resize_min">
+    <div>해당 사이트는 1000px 이하로는 작동하지 않습니다.</div>
+</div>
+
+
+
+
+
+
+<div class="pop pop01">
+    <div class="main">
+        <div class="big_img">
+
+            <!-- 크기 위치 개수 스크립트 -->
+            <div id="pop01_slider">
+                <div><video src="images/ad01.mp4" poster="images/popup/thum_01.jpg" id="video01"></video></div>
+                <div><video src="images/ad02.mp4" poster="images/popup/thum_02.jpg" id="video02"></video></div>
+                <div><video src="images/ad03.mp4" poster="images/popup/thum_03.jpg" id="video03"></video></div>
+                <div><video src="images/ad04.mp4" poster="images/popup/thum_04.jpg" id="video04"></video></div>
+                <div><video src="images/ad05.mp4" poster="images/popup/thum_05.jpg" id="video05"></video></div>
+                <div><video src="images/ad06.mp4" poster="images/popup/thum_06.jpg" id="video06"></video></div>
+            </div>
+
+
+            <div class="play" data-index="0"><img src="images/popup/play_btn.png" alt=""></div>
+
+
+        </div>
+        <div class="small_img">
+            <div class="prev"><img src="images/popup/left_btn.png" alt="prev"></div>
+            <div class="next"><img src="images/popup/right_btn.png" alt="next"></div>
+            <div id="small_slider">
+                <div class="list l1"><img src="images/popup/thum_s_01.png" alt=""></div>
+                <div class="list l2"><img src="images/popup/thum_s_02.png" alt=""></div>
+                <div class="list l3"><img src="images/popup/thum_s_03.png" alt=""></div>
+                <div class="list l4"><img src="images/popup/thum_s_04.png" alt=""></div>
+                <div class="list l5"><img src="images/popup/thum_s_05.png" alt=""></div>
+                <div class="list l6"><img src="images/popup/thum_s_06.png" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="w">
+            <div class="eclips click"></div>
+            <div class="eclips"></div>
+            <div class="eclips"></div>
+            <div class="eclips"></div>
+            <div class="eclips"></div>
+        </div>
+    </div>
+    <div class="title_tag"><img src="images/popup/biz_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+
+<div class="pop pop02 ">
+    <div class="main">
+        <div class="title"><img src="images/popup/chat_16.png" alt="팝업제목"></div>
+        <div class="g_chat">
+            <div class="chat01"><img src="images/popup/chat_20.png" alt="사장님멘트1"></div>
+            <div class="chat02"><img src="images/popup/chat_24.png" alt="유저멘트1"></div>
+            <div class="chat03"><img src="images/popup/chat_27.png" alt="유저멘트2"></div>
+            <div class="chat04"><img src="images/popup/chat_30.png" alt="사장님멘트2"></div>
+            <div class="chat05 gif_img"><img src="images/popup/thx.gif" alt="gif01"></div>
+            <div class="chat06"><img src="images/popup/chat_36.png" alt="사장님프로필"></div>
+            <div class="chat07 gif_img"><img src="images/popup/heart.gif" alt="gif02"></div>
+        </div>
+    </div>
+    <div class="title_tag"><img src="images/popup/chat_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+
+
+
+<div class="pop pop03">
+    <div class="main"><img src="images/popup/appdown.png" alt="앱다운팝업"></div>
+    <div class="title_tag"><img src="images/popup/down_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+<div class="pop pop04">
+    <div class="main">
+        <div class="title"><img src="images/popup/center_tit.png" alt="타이틀문구"></div>
+        <div class="pcchat"></div>
+        <div class="go_btn"><a href="https://chat.daangn.com/login"><img src="images/popup/go_btn.png" alt="바로가기버튼"></a></div>
+    </div>
+    <div class="title_tag"><img src="images/popup/down_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+<div class="pop pop05">
+    <div class="main"><img src="images/popup/find.png" alt="전단지팝업"></div>
+    <div class="title_tag"><img src="images/popup/center_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+<div class="pop pop06">
+    <div class="main">
+        <div class="cont"><img src="images/popup/event.png" alt="내용및이미지"></div>
+        <div class="event_btn"><a href="#"><img src="images/popup/event_btn.png" alt="선물받기버튼"></a></div>
+    </div>
+    <div class="title_tag"><img src="images/popup/event_tag.png" alt="타이틀태그"></div>
+    <div class="close"><img src="images/popup/close_btn.png" alt="닫기버튼"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    overScroll();
+</script>
+</body>
+</html>
