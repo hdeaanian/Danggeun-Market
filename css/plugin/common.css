@@ -1,0 +1,34 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    /*transform:scale(0.5);*/
+
+}
+
+#container .main {
+    width: 3840px;
+    height: 1960px;
+    position: absolute;
+    overflow: hidden;
+    background: #fff3ee url("../../images/bg.png") no-repeat center;
+
+}
+
+
+
+
+#container .main > section {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    box-sizing: border-box;
+}
+
+
