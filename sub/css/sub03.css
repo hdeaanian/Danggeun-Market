@@ -1,0 +1,528 @@
+
+#menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #ff7e36;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#menu .category {
+    width: 56px;
+    height: 117px;
+    position: absolute;
+    right: 60px;
+    top: 120px;
+}
+
+.toggle {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+#navi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    z-index: 1;
+    /*display: none;*/
+}
+
+#navi .menu{
+    padding: 20px;
+}
+
+#navi .g_sticker {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: -104px;
+    opacity: 0;
+    pointer-events: none;
+    animation: rotation 5s infinite linear paused;
+}
+
+#navi > div .g_sticker > div:nth-child(1){
+    animation: rotation 3s reverse infinite linear paused;
+}
+#navi > div .g_sticker > div:nth-child(2){
+    animation: rotation 2.3s infinite linear paused;
+}
+#navi > div .g_sticker > div:nth-child(3){
+    animation: rotation 1.5s reverse infinite linear paused;
+}
+
+
+#navi > div:hover .g_sticker,
+#navi > div:hover .g_sticker > div{
+    opacity: 1;
+    animation-play-state: running;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+
+#navi .g_sticker .s01{
+    position: absolute;
+    top: 219px;
+    left: 197px;
+}
+
+#navi .g_sticker .s02{
+    position: absolute;
+    left: -73px;
+    bottom: 103px;
+}
+
+#navi .g_sticker .s03{
+    position: absolute;
+    right: 91px;
+    top: -82px;
+}
+
+#navi .g_sticker .s04{
+    position: absolute;
+    top: 74px;
+    left: 268px;
+}
+
+#navi .g_sticker .s05{
+    position: absolute;
+    left: -73px;
+    bottom: 103px;
+}
+
+#navi .g_sticker .s06{
+    position: absolute;
+    right: 91px;
+    top: -82px;
+}
+
+#navi .g_sticker .s07{
+    position: absolute;
+    top: 74px;
+    left: 268px;
+}
+
+#navi .g_sticker .s08{
+    position: absolute;
+    left: -73px;
+    bottom: 103px;
+}
+
+#navi .g_sticker .s09{
+    position: absolute;
+    right: 91px;
+    top: -82px;
+}
+
+.menu-open {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+}
+
+.home {
+    position: absolute;
+    right: 130px;
+    top: 42px;
+    z-index: 1502;
+}
+
+.category {
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+
+
+.startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+/*.scroll-content {*/
+/*    !*overflow: hidden;*!*/
+/*}*/
+
+#section01{
+    width: 100%;
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/sub02/visual_bg.jpg");
+    background-size: 100% 100%;
+}
+
+#section01 .visual_bg {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+
+#section01 .visual {
+    width: 1520px;
+    height: 980px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#section01 .title {
+    /*width: 1039px;*/
+    /*height: 205px;*/
+    margin: 125px auto 0;
+}
+
+
+#section01 .visual .people01{
+    position: absolute;
+    bottom: 0;
+    left: 616px;
+}
+
+#section01 .visual .people02{
+    position: absolute;
+    bottom: 0;
+    left: 114px;
+}
+
+#section01 .visual .people03 {
+    position: absolute;
+    bottom: 0;
+    left: 914px;
+}
+
+
+#section01 .scroll {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    animation: scroll 1s infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+#section02{
+    width: 100%;
+    height: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /*background-image: url("../images/sub02/section02_bg.jpg");*/
+}
+
+#section02 .wrap {
+    width: 1280px;
+    height: 100%;
+    position: relative;
+}
+
+#section02 .bg {
+    /*position: absolute;*/
+    /*left: 440px;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section02 .wrap .tit {
+    display: flex;
+    justify-content: center;
+    margin: 90px 0 50px;
+    transform: translateY(30);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section02.on .wrap .tit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section02 .wrap .box {
+    width: 985px;
+    height: 523px;
+    background: #000;
+    border: 20px solid #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#section02 .wrap .man {
+    position: absolute;
+    left: 208px;
+    top: 176px;
+}
+
+#section02 .wrap .opacity {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#section02 .box .video_box {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#section02 .box .video_box .opacity {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#section02 .box .video_box video {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+
+#section02 .box .video_box .play {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+}
+
+#section02 .wrap .btn {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section03 {
+    width: 100%;
+    height: 2670px;
+    background: #ff7e36;
+}
+
+#section03 .cont {
+    width: 100%;
+    height: 100%;
+    background: url("../images/sub03/section03.png");
+    background-size: cover;
+    transform: translateY(30);
+    /* opacity: 0; */
+    transition: all 1s;
+}
+
+
+#section03.on .cont  {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*띠1*/
+.band01 {
+    position: absolute;
+    left: 0;
+    top: 1760px;
+    z-index: 111;
+}
+
+#section05{
+    width: 100%;
+    height: 1251px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/sub02/section05_bg.jpg");
+    overflow: initial;
+}
+
+#section05 .wrap{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#section05 .wrap .star_01 {
+    position: absolute;
+    top: 312px;
+    left: 39px;
+}
+
+#section05 .wrap .star_02 {
+    position: absolute;
+    right: 46px;
+    top: 853px;
+}
+
+#section05 .wrap .box {
+    justify-content: center;
+    display: flex;
+}
+
+#section05 .wrap .event {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+#section05 .g_sticker .s_02 {
+    position: absolute;
+    top: -332px;
+    left: 25px;
+}
+
+#section05 .g_sticker .s_03 {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+
+#section05 .g_sticker .s_04 {
+    position: absolute;
+    top: 306px;
+    right: -149px;
+}
+
+#section05 .g_sticker .s_05 {
+    position: absolute;
+    bottom: 48px;
+    left: 210px;
+}
+
+.move {display: none}
+
+.band03 {
+    position: absolute;
+    bottom: 1374px;
+}
+
+.band02 {
+    position: absolute;
+    bottom: 1550px;
+}
+
+#section04 {
+    width: 100%;
+    height: 345px;
+    background: #fff3ee;
+}
+
+#section04 .btn{
+    width: 248px;
+    height: 52px;
+    border-radius: 8px;
+    color: #fff;
+    background: #2d2d2d;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    left: 20%;
+}
+
+#section06 {
+    width: 100%;
+    height: 294px;
+    background: #201f24;
+}
+
+#section06 > div {
+    width: 100%;
+    height: 100%;
+    background: url("../images/sub03/footer.png") no-repeat center;
+}
+
+.top {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    right: 50px;
+    z-index: 8988;
+    bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.top svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)rotate(-90deg);
+}
+
+.top circle{
+    stroke-dashoffset: 157;
+    stroke-dasharray: 157;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    fill: transparent;
+}
+
