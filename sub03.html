@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>동네가게</title>
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/sub03.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/easing.js"></script>
+    <script src="js/sub01.js"></script>
+
+
+</head>
+<body>
+
+<div class="posNum"></div>
+
+
+<div id="menu">
+    <nav id="navi">
+        <div class="menu menu01" data-name="sub01">
+            <img src="../images/menu/menu_01.png" alt="동네생활">
+
+            <div class="g_sticker">
+                <div class="s01"><img src="../images/menu/s_01.png" alt=""></div>
+                <div class="s02"><img src="../images/menu/s_02.png" alt=""></div>
+                <div class="s03"><img src="../images/menu/s_03.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="menu menu02" data-name="sub02"><img src="../images/menu/menu_02.png" alt="중고거래">
+            <div class="g_sticker">
+                <div class="s04"><img src="../images/menu/s_04.png" alt=""></div>
+                <div class="s05"><img src="../images/menu/s_05.png" alt=""></div>
+                <div class="s06"><img src="../images/menu/s_06.png" alt=""></div>
+            </div>
+        </div>
+        <div class="menu menu03" data-name="sub03"><img src="../images/menu/menu_03.png" alt="동네생활">
+            <div class="g_sticker">
+                <div class="s07"><img src="../images/menu/s_07.png" alt=""></div>
+                <div class="s08"><img src="../images/menu/s_08.png" alt=""></div>
+                <div class="s09"><img src="../images/menu/s_09.png" alt=""></div>
+            </div>
+        </div>
+    </nav>
+    <!--    <div class="category"><img src="../images/menu/category.png" alt="카테고리명"></div>-->
+</div>
+
+<div class="toggle">
+    <!--    <div class="menu-close"><img src="images/menu/close_btn_w.png" alt="닫기버튼"></div>-->
+    <div class="menu-open"><img src="../images/menu_btn.png" alt="메뉴버튼"></div>
+</div>
+
+<div class="header">
+    <div class="logo"><img src="images/sub01/logo_03.png" alt="로고"></div>
+    <div class="home"><a href="../index.html"><img src="images/sub01/home_btn.png" alt="홈버튼"></a></div>
+    <div class="category"><img src="images/sub01/category.png" alt="카테고리명"></div>
+</div>
+
+<button class="startPoint"></button>
+
+<section id="container">
+    <section id="section01">
+        <div class="visual_bg"><img src="images/sub03/town.png" alt="배경건물"></div>
+        <!--        <div class="texture"><img src="images/texture.png" alt="질감"></div>-->
+        <div class="title"><img src="images/sub03/sub_title.png" alt="대제목"></div>
+        <div class="visual">
+            <div class="people02"><img src="images/sub03/visual_02.png" alt="남성"></div>
+            <div class="people01"><img src="images/sub03/visual.png" alt="여성"></div>
+            <div class="people03"><img src="images/sub03/visual_03.png" alt="여성"></div>
+
+        </div>
+        <div class="scroll"><img src="images/sub02/mousescroll.png" alt="스크롤유도"></div>
+    </section>
+
+
+    <section id="section02">
+        <div class="wrap">
+            <div class="tit"><img src="images/sub03/02_tit.png" alt="타이틀문구"></div>
+            <div class="bg"><img src="images/sub03/bg.png" alt="하트배경"></div>
+            <div class="box">
+                <div class="video_box">
+                    <div class="opacity"></div>
+                    <div class="video"><video src="images/sub03/ad01.mp4" poster="images/sub03/thumnail.jpg" id="video01"></video></div>
+                    <div class="play"><img src="images/sub03/play_btn.png" alt="재생버튼"></div>
+                </div>
+            </div>
+            <div class="btn"><a href="#"><img src="images/sub03/btn_1.png" alt="캠페인바로가기버튼"></a></div>
+        </div>
+    </section>
+
+    <section id="section03">
+        <div class="cont"></div>
+    </section>
+
+    <section id="section04">
+        <div class="banner"></div>
+        <div class="btn"><a href="../sub/sub03_1.html">비즈프로필 만들기</a></div>
+    </section>
+
+
+    <section id="section06">
+        <div></div>
+    </section>
+    <!--    <div class="band01"><img src="../images/sub1/band_01.png" alt=""></div>-->
+
+</section>
+
+<div class="top">
+    <img src="images/sub01/scroll_top.png" alt="탑버튼">
+    <svg>
+        <circle r="25" cx="50%" cy="50%"></circle>
+    </svg>
+</div>
+
+<script>
+    console.log(document.querySelector('circle').getTotalLength());
+</script>
+
+
+<script src="js/plugin/gsap.js"></script>
+<script src="js/plugin/scrollTrigger.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/sub01.js"></script>
+
+
+</body>
+</html>

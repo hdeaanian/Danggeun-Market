@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>동네생활</title>
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/plugin/swiper.css">
+    <link rel="stylesheet" href="css/sub01.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/swiper.js"></script>
+    <script src="js/plugin/easing.js"></script>
+    <script src="js/plugin/anime.min.js"></script>
+    <script src="js/sub03.js"></script>
+
+</head>
+<body>
+
+<div class="posNum"></div>
+
+<div id="menu">
+    <nav id="navi">
+        <div class="menu menu01" data-name="sub01">
+            <img src="../images/menu/menu_01.png" alt="동네생활">
+
+            <div class="g_sticker">
+                <div class="s01"><img src="../images/menu/s_01.png" alt=""></div>
+                <div class="s02"><img src="../images/menu/s_02.png" alt=""></div>
+                <div class="s03"><img src="../images/menu/s_03.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="menu menu02" data-name="sub02"><img src="../images/menu/menu_02.png" alt="중고거래">
+            <div class="g_sticker">
+                <div class="s04"><img src="../images/menu/s_04.png" alt=""></div>
+                <div class="s05"><img src="../images/menu/s_05.png" alt=""></div>
+                <div class="s06"><img src="../images/menu/s_06.png" alt=""></div>
+            </div>
+        </div>
+        <div class="menu menu03" data-name="sub03"><img src="../images/menu/menu_03.png" alt="동네생활">
+            <div class="g_sticker">
+                <div class="s07"><img src="../images/menu/s_07.png" alt=""></div>
+                <div class="s08"><img src="../images/menu/s_08.png" alt=""></div>
+                <div class="s09"><img src="../images/menu/s_09.png" alt=""></div>
+            </div>
+        </div>
+    </nav>
+<!--    <div class="category"><img src="../images/menu/category.png" alt="카테고리명"></div>-->
+</div>
+
+<div class="toggle">
+    <!--    <div class="menu-close"><img src="images/menu/close_btn_w.png" alt="닫기버튼"></div>-->
+    <div class="menu-open"><img src="../images/menu_btn.png" alt="메뉴버튼"></div>
+</div>
+
+<div class="header">
+    <div class="logo"><img src="images/sub01/logo_03.png" alt="로고"></div>
+    <div class="home"><a href="../index.html"><img src="images/sub01/home_btn.png" alt="홈버튼"></a></div>
+    <div class="category"><img src="images/sub01/category.png" alt="카테고리명"></div>
+</div>
+
+<button class="startPoint"></button>
+
+<section id="container">
+    <section id="section01">
+        <div class="visual_bg"><img src="images/sub01/town.png" alt="배경건물"></div>
+        <div class="title"><img src="images/sub01/sub_title.png" alt="대제목"></div>
+        <div class="visual">
+            <div class="people01"><img src="images/sub01/visual.png" alt="부부"></div>
+            <div class="people02"><img src="images/sub01/visual_02.png" alt="여성무리"></div>
+        </div>
+        <div class="scroll"><img src="images/sub01/mousescroll.png" alt="스크롤유도"></div>
+    </section>
+
+
+    <section id="section02">
+        <div class="message">
+            <div class="wrap">
+                <div class="m_01 num">
+                    <div class="off"><img src="images/sub01/02_text_1.png" alt="일상"></div>
+                    <div class="on"><img src="images/sub01/02_text_1_off.png" alt="일상"></div>
+                </div>
+                <div class="img01 num"><img src="images/sub01/sub1_03.png" alt="강아지"></div>
+                <div class="m_02 num"><img src="images/sub01/02_text_2.png" alt="질문이있어요"></div>
+                <div class="img02 num"><img src="images/sub01/sub1_07.png" alt="뉴스"></div>
+                <div class="m_03 num"><img src="images/sub01/02_text_3.png" alt="같이해요"></div>
+            </div>
+            <div class="wrap">
+                <div class="m_04 num"><img src="images/sub01/02_text_4.png" alt="동네친구구해요"></div>
+                <div class="img03 num"><img src="images/sub01/sub1_20.png" alt="남자"></div>
+                <div class="m_05 num">
+                    <div class="change">
+                        <img src="images/sub01/02_text_5.png" alt="우리동네정보">
+                    </div>
+
+                    <svg id="shape" xmlns="http://www.w3.org/2000/svg" width="500" height="120" viewBox="0 0 500 120">
+                        <defs>
+                            <style>
+                                #shape-1 {
+                                    fill: transparent;
+                                    stroke:#fff;
+                                    stroke-linecap:round;
+                                    stroke-linejoin:round;
+                                    stroke-width:4px;
+                                }
+                            </style>
+                        </defs>
+                        <polygon id="shape-1" data-name="shape" points="37.9 2 2 58 37.9 116 408 116 439 59 412.2 2 37.9 2"/>
+                    </svg>
+
+                </div>
+                <div class="img04 num"><img src="images/sub01/sub1_23.png" alt="당근이"></div>
+            </div>
+            <div class="wrap">
+                <div class="img05 num"><img src="images/sub01/sub1_32.png" alt="여자"></div>
+                <div class="m_06 num">
+                    <div class="change"><img src="images/sub01/02_text_6.png" alt="우리동네소식"></div>
+
+                    <svg id="shape02" xmlns="http://www.w3.org/2000/svg" width="500" height="120" viewBox="0 0 500 120">
+                        <defs>
+                            <style>
+                                #shape-2 {
+                                    fill: transparent;
+                                    stroke:#fff;
+                                    stroke-linecap:round;
+                                    stroke-linejoin:round;
+                                    stroke-width:4px;
+                                }
+                            </style>
+                        </defs>
+                        <polygon id="shape-2" data-name="shape" points="37.9 2 2 58 37.9 116 408 116 439 59 412.2 2 37.9 2"/>
+                    </svg>
+
+                </div>
+                <div class="m_07 num">
+                    <div class="change"><img src="images/sub01/02_text_7.png" alt="동네사진전"></div>
+
+                    <svg id="shape03" xmlns="http://www.w3.org/2000/svg"  width="500" height="120" viewBox="0 0 500 120">
+                        <defs>
+                            <style>
+                                #shape-3 {
+                                    fill: transparent;
+                                    stroke: #fff;
+                                    stroke-width:4;
+                                    stroke-linecap:round;
+                                    stroke-linejoin:round;
+                                    stroke-miterlimit:10;
+                                }
+                            </style>
+                        </defs>
+                        <polygon id="shape-3" data-name="shape" points="44.7,5 5.7,119 381.8,119 420.8,5"/>
+                    </svg>
+
+                </div>
+                <div class="m_08 num">
+                    <div><img src="images/sub01/02_text_08.png" alt="모임"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section02_1">
+        <div class="band01">
+            <div class="cover">
+                <div><img src="images/sub01/band_01.jpg" alt="흰색직선띠"></div>
+                <div><img src="images/sub01/band_01.jpg" alt="흰색직선띠"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section03">
+        <div class="service"><img src="images/sub01/03_cont.png" alt="동네생활"></div>
+    </section>
+
+
+    <section id="section04">
+        <div class="wrap">
+            <div class="box">
+                <div class="tit"><img src="images/sub01/04_tit.png" alt="타이틀문구"></div>
+                <div class="view_btn"><img src="images/sub01/04_btn.png" alt="전체모아보기"></div>
+            </div>
+
+            <div class="meet swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_01_off.png" alt=""></div>
+                        <div class="fill"><img src="images/sub01/04_card_01_on.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_02_off.png" alt=""></div>
+                        <div class="fill"><img src="images/sub01/04_card_02_on.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_03_off.png" alt=""></div>
+                        <div class="fill"><img src="images/sub01/04_card_03_on.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_04_off.png" alt=""></div>
+                        <div class="fill"><img src="images/sub01/04_card_04_on.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_04_off.png" alt=""></div>
+                        <div class="fill"><img src="images/sub01/04_card_02_on.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div><img src="images/sub01/04_card_04_off.png" alt="선택된 모임1"></div>
+                        <div class="fill"><img src="images/sub01/04_card_02_on.png" alt="선택된 모임1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drag"><img src="images/sub01/drag.png" alt="드래그유도"></div>
+        </div>
+        <div class="bar"></div>
+    </section>
+
+    <section id="band">
+        <div class="band02">
+            <div class="cover">
+                <div><img src="images/sub01/band_02.jpg" alt="역방향사선띠"></div>
+                <div><img src="images/sub01/band_02.jpg" alt="역방향사선띠"></div>
+            </div>
+        </div>
+        <div class="band03">
+            <div><img src="images/sub01/band_01.jpg" alt="흰색직선띠"></div>
+            <div><img src="images/sub01/band_01.jpg" alt="흰색직선띠"></div>
+        </div>
+
+    </section>
+
+    <section id="section05">
+        <div class="wrap">
+            <div class="tit"><img src="images/sub01/05_cont__03.png" alt="타이틀문구"></div>
+            <div class="box">
+                <div class="question off">
+
+                    <div class="off_box">
+                        <div class="text"><img src="images/sub01/05_cont__11.png" alt="질문2"></div>
+                        <div class="open_btn"><img src="images/sub01/toggle_off.png" alt="열기"></div>
+                    </div>
+
+                    <div class="on_box">
+                        <div class="text"><img src="images/sub01/05_cont__07.png" alt="질문1"></div>
+                        <div class="close_btn"><img src="images/sub01/toggle_on.png" alt="닫기"></div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="question off">
+
+                    <div class="off_box">
+                        <div class="text"><img src="images/sub01/05_cont__11.png" alt="질문2"></div>
+                        <div class="open_btn"><img src="images/sub01/toggle_off.png" alt="열기"></div>
+                    </div>
+
+                    <div class="on_box">
+                        <div class="text"><img src="images/sub01/05_cont__07.png" alt="질문1"></div>
+                        <div class="close_btn"><img src="images/sub01/toggle_on.png" alt="닫기"></div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="question off">
+
+                    <div class="off_box">
+                        <div class="text"><img src="images/sub01/05_cont__14.png" alt="질문2"></div>
+                        <div class="open_btn"><img src="images/sub01/toggle_off.png" alt="열기"></div>
+                    </div>
+
+                    <div class="on_box">
+                        <div class="text"><img src="images/sub01/05_cont__07.png" alt="질문1"></div>
+                        <div class="close_btn"><img src="images/sub01/toggle_on.png" alt="닫기"></div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="question off">
+
+                    <div class="off_box">
+                        <div class="text"><img src="images/sub01/05_cont__17.png" alt="질문2"></div>
+                        <div class="open_btn"><img src="images/sub01/toggle_off.png" alt="열기"></div>
+                    </div>
+
+                    <div class="on_box">
+                        <div class="text"><img src="images/sub01/05_cont__07.png" alt="질문1"></div>
+                        <div class="close_btn"><img src="images/sub01/toggle_on.png" alt="닫기"></div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+            </div>
+
+
+            <div class="g_sticker">
+                <div class="s_01"><img src="images/sub01/05_sticker_1.png" alt=""></div>
+                <div class="s_02"><img src="images/sub01/05_sticker_2.png" alt=""></div>
+                <div class="s_03"><img src="images/sub01/05_sticker_3.png" alt=""></div>
+            </div>
+            <div class="tip"><img src="images/sub01/05_cont_22.png" alt="tip"></div>
+        </div>
+    </section>
+
+
+
+    <section id="section06">
+        <div></div>
+    </section>
+
+
+
+    <!--    <div class="band01"><img src="../images/sub1/band_01.png" alt=""></div>-->
+
+</section>
+
+<div class="top">
+    <img src="images/sub01/scroll_top.png" alt="탑버튼">
+    <svg>
+        <circle r="25" cx="50%" cy="50%"></circle>
+    </svg>
+</div>
+
+<script>
+    console.log(document.querySelector('circle').getTotalLength());
+</script>
+
+
+<script src="js/plugin/gsap.js"></script>
+<script src="js/plugin/scrollTrigger.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/sub03.js"></script>
+
+
+</body>
+</html>
